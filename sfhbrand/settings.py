@@ -18,11 +18,13 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 
 from datetime import timedelta
 
+from decouple import config
+
+SECRET_KEY = config("SECRET_KEY") # this is to replace the secret key you cut away before
+
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/4.0/howto/deployment/checklist/
-
-
 
 
 # SECURITY WARNING: don't run with debug turned on in production!
